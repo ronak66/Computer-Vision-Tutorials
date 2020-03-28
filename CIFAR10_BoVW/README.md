@@ -1,0 +1,8 @@
+# BoVW on CIFAR10 and Panaroma Building
+
+![alt text](assets/IMT2017523_IMT2017502_IMT2017521-1.jpg)
+![alt text](assets/IMT2017523_IMT2017502_IMT2017521-2.jpg)
+![alt text](assets/IMT2017523_IMT2017502_IMT2017521-3.jpg)
+![alt text](assets/IMT2017523_IMT2017502_IMT2017521-4.jpg)
+![alt text](assets/IMT2017523_IMT2017502_IMT2017521-5.jpg)
+![alt text](assets/IMT2017523_IMT2017502_IMT2017521-6.jpg)
