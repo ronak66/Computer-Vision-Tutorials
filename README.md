@@ -8,6 +8,7 @@ In order to take your first step towards computer vision, you can implement/view
 * Road Lane Detector
 * Face, Night, Landscape classifier
 * Face Recognition
+* Object Detection
 * CIFAR10 classification using Bag of visual words (BoVW)
 * CIFAR10 classification using Vector of locally aggregated descriptor (VLAD)
 * CIFAR10 classification using CNN achitecture
