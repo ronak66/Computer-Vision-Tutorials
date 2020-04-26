@@ -8,11 +8,11 @@ imds = balance_dataset(imds);
 [imdsTrain,imdsTest] = splitEachLabel(imds,0.7,'randomized');
 
 %loading the network
-% net = alexnet;
+net = alexnet;
 % net = resnet18;
 % net = mobilenetv2;
 % net = vgg19;
-net = resnet101;
+%net = resnet101;
 inputSize = net.Layers(1).InputSize;
 
 %Resizing the data
@@ -20,11 +20,11 @@ augimdsTrain = augmentedImageDatastore(inputSize,imdsTrain, 'ColorPreprocessing'
 augimdsTest = augmentedImageDatastore(inputSize,imdsTest, 'ColorPreprocessing', 'gray2rgb');
 
 %Defining the feature layer
-% featureLayer = 'fc7'; %for alexnet
+featureLayer = 'fc7'; %for alexnet
 % featureLayer = 'fc1000'; %for resnet
 % featureLayer = 'Logits'; %for mobilenet
 % featureLayer = 'fc7'; %for vgg19
-featureLayer = 'res5c_relu'; %for resnet101
+% featureLayer = 'res5c_relu'; %for resnet101
 
 trainingFeatures = activations(net, augimdsTrain, featureLayer, 'MiniBatchSize', 32, 'OutputAs', 'columns');
 trainingLabels = imdsTrain.Labels;
